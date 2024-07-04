@@ -1,0 +1,12 @@
+body {
+    font-size: 1rem;
+}
+
+#acessibilidade button {
+    margin: 0 5px;
+}
+
+.high-contrast {
+    background-color: black;
+    color: white;
+}

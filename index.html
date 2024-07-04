@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Exemplo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <nav class="container">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#acessibilidade">Acessibilidade</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container mt-4">
+        <section id="home" class="my-5">
+            <h1 class="display-4">Boas-vindas a</h1>
+            <p>Quero conhecer!</p>
+        </section>
+
+        <section id="tropicalia" class="my-5">
+            <h2>O que foi a Tropicália?</h2>
+            <p>A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e teve como principal característica a mistura de elementos da cultura brasileira tradicional com influências estrangeiras, especialmente do rock e da música pop.</p>
+        </section>
+        
+        <section id="galeria" class="my-5">
+            <h2>Galeria</h2>
+            <!-- Conteúdo da galeria -->
+        </section>
+        
+        <section id="contato" class="my-5">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+        
+        <section id="acessibilidade" class="my-5">
+            <h2>Acessibilidade</h2>
+            <button id="increase-font" class="btn btn-secondary">A +</button>
+            <button id="reset-font" class="btn btn-secondary">A</button>
+            <button id="decrease-font" class="btn btn-secondary">A -</button>
+        </section>
+        
+       
+    </main>
+    
+    <footer class="bg-dark text-white text-center p-3">
+        <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
