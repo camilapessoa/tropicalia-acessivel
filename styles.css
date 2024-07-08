@@ -2,9 +2,18 @@ body {
     font-size: 1rem;
 }
 
-/* .menu {
-    color: CB6D43;
-} */
+header {
+    background-color: #FFFFFF;
+}
+
+header .navbar-brand {
+    font-weight: bold;
+}
+
+section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
 #acessibilidade button {
     margin: 0 5px;
@@ -13,4 +22,23 @@ body {
 .high-contrast {
     background-color: black;
     color: white;
+}
+
+.high-contrast a {
+    color: yellow;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
 }
