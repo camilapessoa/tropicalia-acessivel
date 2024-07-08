@@ -17,21 +17,24 @@
                
                 <!-- <div><li class="nav-item"><a class="nav-link text-white" href="#acessibilidade">Acessibilidade</a></li></div> -->
             </ul>
-            <div id="acessibilidade" class="my-5">
-                <h2>Acessibilidade</h2>
+            
+            
+        </nav>
+        <div id="acessibilidade" class="accessibility-menu">
+            <button id="accessibility-btn" class="btn btn-secondary">Acessibilidade</button>
+            <div id="accessibility-options" class="accessibility-options d-none">
                 <button id="increase-font" class="btn btn-secondary">A +</button>
                 <button id="reset-font" class="btn btn-secondary">A</button>
                 <button id="decrease-font" class="btn btn-secondary">A -</button>
                 <button id="toggle-contrast" class="btn btn-dark">Alto Contraste</button>
             </div>
-            
-        </nav>
+        </div>
     </header>
     
     <main class="container mt-4">
         <section id="home" class="my-5">
             <h1 class="display-4">Boas-vindas ao Tropicalismo!</h1>
-            <p>Quero conhecer!</p>
+            <a href="#tropicalia" class="btn btn-primary">Quero conhecer!</a>
         </section>
 
         <section id="tropicalia" class="my-5">
@@ -42,7 +45,16 @@
         <section id="galeria" class="my-5">
             <h2>Galeria</h2> 
             <div class="container">
-                  <img src="img/imagem2.jpg" class="rounded mx-auto d-block" alt="...">
+
+                <div class="row">
+                <div class="col-sm-3"> <img src="img/imagem2.jpg" class="rounded mx-auto d-block" alt="..."></div>
+                <div class="col-sm-3"><img src="img/imagem1.jpg" class="rounded mx-auto d-block"  alt="..."></div>
+                <div class="col-sm-3"></div>
+                
+            </div>
+                 
+
+                  
                 
             <!-- Conteúdo da galeria -->
 

@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: #343a40;
 }
 
 header .navbar-brand {
@@ -13,10 +13,6 @@ header .navbar-brand {
 section {
     margin-top: 3rem;
     margin-bottom: 3rem;
-}
-
-#acessibilidade button {
-    margin: 0 5px;
 }
 
 .high-contrast {
@@ -41,4 +37,33 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.accessibility-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.accessibility-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.accessibility-options.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.accessibility-options button {
+    margin-bottom: 5px;
+}
+
+.d-none {
+    display: none;
 }
