@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root{
     --laranja-claro: #FF862A;
@@ -14,8 +15,9 @@ header {
 }
 
 section {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -70,6 +72,42 @@ section {
 .display-4{
     text-shadow: -5px 5px var(--laranja-claro);
 }
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat, 
+                url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px; /* Ajuste o tamanho conforme necessário */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    z-index: 1; /* Ensure content is above the background images */
+}
+
+/* #tropicalia .img-fluid {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size:40px;
+     /* xx-large; */
+    font-style: normal;
+    color: var(--laranja-claro);
+}
+ 
+/* Alto contraste */
 
 .high-contrast {
     background-color: black;
