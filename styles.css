@@ -39,6 +39,15 @@ section {
     /* text-align: center; */
 }
 
+/* posicionamento para a imagem à direita */
+.custom-img {
+    position: absolute;
+    right: 0;
+    top: 18rem; 
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* aula 3 */
 .left-content {
