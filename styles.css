@@ -108,13 +108,13 @@ section {
 } */
 
 
-h2 {
+/* h2 {
     font-family: 'Lemon', serif;
     font-size:40px;
-     /* xx-large; */
+     
     font-style: normal;
     color: var(--laranja-claro);
-}
+} */
 
 #galeria{
     background-color: #FAF4F4;
