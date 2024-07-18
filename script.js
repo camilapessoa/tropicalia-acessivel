@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const accessibilityOptions = document.getElementById('accessibility-options');
 
     accessibilityBtn.addEventListener('click', function() {
+        accessibilityBtn.classList.toggle('rotated-button');
         accessibilityOptions.classList.toggle('d-none');
         accessibilityOptions.classList.toggle('show');
     });

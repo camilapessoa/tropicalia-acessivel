@@ -14,9 +14,14 @@ header {
     background-color: #ffffff;
 }
 
-section {
+.section-tropicalia{
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+section {
+    /* margin-top: 5rem;
+    margin-bottom: 5rem; */
     padding-bottom: 5rem;
 }
 
@@ -155,6 +160,8 @@ h2 {
 
 
 
+
+
 /* Alto contraste */
 
 .high-contrast {
@@ -185,11 +192,24 @@ form{
     color: #343a40;
 }
 
-.accessibility-menu {
+/* .accessibility-menu {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1000;
+} */
+
+.accessibility-menu {
+    position: fixed;
+    top: 2rem;
+    right: 20px; /* Ajusta a distância da borda direita */
+    transform: translateY(50%);
+    z-index: 1000;
+}
+
+.rotated-button {
+    transform: rotate(-90deg);
+    transform-origin: right center;
 }
 
 .accessibility-options {
@@ -198,7 +218,7 @@ form{
     flex-direction: column;
     opacity: 0;
     transform: translateY(-10px);
-    /* transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; */
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .accessibility-options.show {
