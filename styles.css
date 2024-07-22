@@ -78,7 +78,7 @@ section {
     background-color: var(--laranja-claro);
     border-radius: 30px;
     /* font-weight: bold; substitui pela classe semibold*/
-    font-size:22px ;
+    /* font-size:22px ; */
     border: none;
     width: 14em; /* Convertido para em aumenta o tamanho da fonte por tabela*/
     height:3em; /* Convertido para em */
