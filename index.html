@@ -8,6 +8,8 @@
     <title>Tropicália</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,22 +19,21 @@
 <body>
     <header class=" p-5">
 
-        <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/logo.png" alt="Descrição da Imagem" class="nav-img ">
+        <nav class="container d-flex justify-content-between align-items-center" role="navigation" aria-label="Menu principal">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img ">
             <ul class="nav mt-5">
                 <li class="nav-item"><a class="nav-link " href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link " href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link " href="#contato">Contato</a></li>
             </ul>
-
         </nav>
-        <div id="acessibilidade" class="accessibility-menu">
-            <button id="accessibility-btn" class="btn btn-primary rotated-button fw-bold" >Acessibilidade</button>
-            <div id="accessibility-options" class="accessibility-options d-none ">
-                <button id="increase-font" class="btn btn-primary fw-bold">A +</button>
-                <button id="reset-font" class="btn btn-primary fw-bold">A</button>
-                <button id="decrease-font" class="btn btn-primary fw-bold">A -</button>
-                <button id="toggle-contrast" class="btn btn-dark"><i class="bi bi-shadows"></i> </button>
+        <div id="acessibilidade" class="accessibility-menu" aria-label="Menu de acessibilidade">
+            <button id="accessibility-btn" class="btn btn-primary rotated-button fw-bold" aria-expanded="false" aria-controls="accessibility-options">Acessibilidade</button>
+            <div id="accessibility-options" class="accessibility-options d-none " role="group" aria-label="Opções de acessibilidade">
+                <button id="increase-font" class="btn btn-primary fw-bold" aria-label="Aumentar fonte">A +</button>
+                <button id="reset-font" class="btn btn-primary fw-bold" aria-label="Restaurar tamanho da fonte">A</button>
+                <button id="decrease-font" class="btn btn-primary fw-bold" aria-label="Diminuir fonte">A -</button>
+                <button id="toggle-contrast" class="btn btn-dark" aria-label="Ativar/desativar alto contraste"><i class="bi bi-shadows"></i></button>
             </div>
         </div>
     </header>
@@ -44,22 +45,19 @@
             <div class="home-background d-flex justify-content-between align-items-center">
                 <div class="left-content">
                     <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" alt="Descrição da Imagem" class="mb-3" width="563" height="278">
+                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563" height="278">
                     <a href="#tropicalia" class="btn btn-primary btn-lg botao-home fw-semibold" role="button">Quero
                         conhecer!</a>
                 </div>
 
-                <img src="img/Sem Título-1 1.png" alt="Descrição da Imagem" class="img-fluid custom-img">
-
+                <img src="img/Sem Título-1 1.png" alt="Imagem decorativa" class="img-fluid custom-img animate__animated animate__rotateInDownRight animate__delay-1s">
             </div>
-
         </section>
 
         <section id="tropicalia" class="my-5 pt-6 section-tropicalia">
-
             <div class="container d-flex align-items-center tropicalia-background">
                 <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/festival.png" alt="Descrição da Imagem">
+                    <img src="img/festival.png" alt="Imagem de um festival">
                 </div>
                 <div class="col-5">
                     <h2>O que foi a Tropicália?</h2>
@@ -73,45 +71,40 @@
         </section>
 
         <section id="galeria" >
-            <!-- class="my-5 " -->
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-2 galeria-background">
                 <div class="row p-5">
-                    <div class="col-sm-6 mb-3 "><img src="img/imagem1.jpg" class="rounded mx-auto d-block" width="395"
-                            heigth="230" alt="..."></div>
-                    <div class="col-sm-6 mb-3"><img src="img/imagem2.jpg" class="rounded mx-auto d-block" width="395"
-                            heigth="230" alt="..."></div>
+                    <div class="col-sm-6 mb-3 ">
+                        <img src="img/imagem1.jpg" class="rounded mx-auto d-block" width="395" height="230" alt="Descrição da imagem 1">
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <img src="img/imagem2.jpg" class="rounded mx-auto d-block" width="395" height="230" alt="Descrição da imagem 2">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <img src="img/tropicalia-2.webp" class="rounded mx-auto d-block" width="498" heigth="306"
-                            alt="...">
+                        <img src="img/tropicalia-2.webp" class="rounded mx-auto d-block " width="498" height="306" alt="Descrição da imagem 3">
                     </div>
                 </div>
             </div>
         </section>
 
-        </section>
         <section id="contato" >
-            <!-- class="my-5" -->
             <div class="container p-5 d-flex justify-content-center">
                 <div class="formulario col-md-8 col-lg-10 rounded-5"> <!-- Caixa do formulário com 60% de largura -->
                     <h2 class="mb-3">Entre em contato</h2>
                     <form>
                         <div class="form-group mb-3">
                             <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-pill mt-1"
-                                placeholder="Digite seu nome completo">
+                            <input type="text" id="nome" name="nome" class="form-control rounded-pill mt-1" placeholder="Digite seu nome completo">
                         </div>
                         <div class="form-group mb-3">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-pill mt-1"
-                                placeholder="Digite seu email">
+                            <input type="email" id="email" name="email" class="form-control rounded-pill mt-1" placeholder="Digite seu email">
                         </div>
                         <div class="form-group mb-3">
                             <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-5 mt-1" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-5 mt-1" rows="4" placeholder="Escreva sua mensagem"></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar</button>
@@ -123,13 +116,10 @@
     </main>
     <footer class="bg-white text-black text-center p-3 fst-italic">
         <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+        <i class="bi bi-instagram" aria-hidden="true"></i>
+        <i class="bi bi-tiktok" aria-hidden="true"></i>
         <p class="mt-3">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
-
-
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>

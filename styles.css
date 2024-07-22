@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-:root{
+:root {
     --laranja-claro: #FF862A;
+    --high-contrast-bg: #000000;
+    --high-contrast-text: #FFFFFF;
+    --high-contrast-link: #FFD700; /* Amarelo ouro */
 }
 
 body {
@@ -165,20 +168,63 @@ h2 {
 /* Alto contraste */
 
 .high-contrast {
-    background-color: black;
-    color: white;
+    background-color: var(--high-contrast-bg);
+    color: var(--high-contrast-text);
 }
 
-.high-contrast a {
+.high-contrast header,
+.high-contrast footer,
+.high-contrast .formulario {
+    background-color: var(--high-contrast-bg);
+    color: var(--high-contrast-text);
+}
+.high-contrast .nav-link {
+    color: var(--high-contrast-link);
+}
+
+.high-contrast .botao-home,
+.high-contrast .formulario button,
+.high-contrast .btn-primary {
+    background-color: var(--high-contrast-link);
+    color: var(--high-contrast-bg);
+}
+
+.high-contrast .home-background,
+.high-contrast #contato {
+    background: none;
+    background-color: var(--high-contrast-bg);
+   
+}
+
+.high-contrast .custom-img,
+.high-contrast #tropicalia .container img,
+.high-contrast .galeria-background img {
+    filter: brightness(0.8); /* Ajuste a luminosidade das imagens */
+}
+
+.high-contrast #tropicalia {
+    
+    background: none;
+}
+
+.high-contrast #galeria {
+    background-color: var(--high-contrast-bg);
+}
+
+.high-contrast .galeria-background {
+    background: none;
+}
+
+/* .high-contrast a {
     color: rgb(0, 0, 0);
-}
+} */
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-}
+} */
 
-footer {
+/* footer {
     background-color: #343a40;
     color: white;
     padding: 20px 0;
@@ -190,9 +236,10 @@ footer p {
 
 form{
     color: #343a40;
-}
+} */
 
-/* .accessibility-menu {
+/* deixar comentado mesmo 
+.accessibility-menu {
     position: fixed;
     top: 20px;
     right: 20px;
