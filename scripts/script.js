@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         accessibilityBtn.classList.toggle('rotated-button');
         accessibilityOptions.classList.toggle('d-none');
         accessibilityOptions.classList.toggle('show');
+        
+        // Atualização do valor do atributo aria-expanded
+        const isExpanded = accessibilityBtn.getAttribute('aria-expanded') === 'true';
+        accessibilityBtn.setAttribute('aria-expanded', !isExpanded);
     });
 
     const increaseFontBtn = document.getElementById('increase-font');
