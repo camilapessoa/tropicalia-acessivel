@@ -1,40 +1,48 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const accessibilityBtn = document.getElementById('accessibility-btn');
-    const accessibilityOptions = document.getElementById('accessibility-options');
+    const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
-    accessibilityBtn.addEventListener('click', function() {
-        accessibilityBtn.classList.toggle('rotated-button');
-        accessibilityOptions.classList.toggle('d-none');
-        accessibilityOptions.classList.toggle('show');
+    botaoDeAcessibilidade.addEventListener('click', function() {
+        botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+        opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+        opcoesDeAcessibilidade.classList.toggle('mostra');
         
         // Atualização do valor do atributo aria-expanded
-        const isExpanded = accessibilityBtn.getAttribute('aria-expanded') === 'true';
-        accessibilityBtn.setAttribute('aria-expanded', !isExpanded);
+        const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+        botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
     });
 
-    const increaseFontBtn = document.getElementById('increase-font');
-    const resetFontBtn = document.getElementById('reset-font');
-    const decreaseFontBtn = document.getElementById('decrease-font');
-    const toggleContrastBtn = document.getElementById('toggle-contrast');
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const reiniciaFonteBotao = document.getElementById('reinicia-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
+    const alternaContraste = document.getElementById('alterna-contraste');
 
-    let currentFontSize = 1;
+    let tamanhoAtualFonte = 1;
 
-    increaseFontBtn.addEventListener('click', function() {
-        currentFontSize += 0.1;
-        document.body.style.fontSize = `${currentFontSize}rem`;
+    aumentaFonteBotao.addEventListener('click', function() {
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
     });
 
-    resetFontBtn.addEventListener('click', function() {
-        currentFontSize = 1;
-        document.body.style.fontSize = `${currentFontSize}rem`;
+    reiniciaFonteBotao.addEventListener('click', function() {
+        tamanhoAtualFonte = 1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
     });
 
-    decreaseFontBtn.addEventListener('click', function() {
-        currentFontSize -= 0.1;
-        document.body.style.fontSize = `${currentFontSize}rem`;
+    diminuiFonteBotao.addEventListener('click', function() {
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
     });
 
-    toggleContrastBtn.addEventListener('click', function() {
-        document.body.classList.toggle('high-contrast');
+    alternaContraste.addEventListener('click', function() {
+        document.body.classList.toggle('alto-contraste');
     });
 });
+
+
+// ScrollReveal({ reset: true });
+ScrollReveal({ reset: false });
+ScrollReveal().reveal('#home');
+ScrollReveal().reveal('#tropicalia', { delay: 200 });
+ScrollReveal().reveal('#galeria', { delay: 200 });
+ScrollReveal().reveal('#contato', { delay: 200 });

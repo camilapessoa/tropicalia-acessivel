@@ -3,9 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
-    --high-contrast-bg: #000000;
-    --high-contrast-text: #FFFFFF;
-    --high-contrast-link: #FFD700; /* Amarelo ouro */
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #FFFFFF;
+    --alto-contraste-link: #FFD700; /* Amarelo ouro */
 }
 
 body {
@@ -17,10 +17,6 @@ header {
     background-color: #ffffff;
 }
 
-.section-tropicalia{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
 
 section {
     /* margin-top: 5rem;
@@ -34,7 +30,7 @@ section {
     font-weight: 600;
 }
 
-.home-background {
+.inicio-fundo {
     /* aula 3 */
     background-image: url('img/4965007.jpg'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
@@ -48,7 +44,7 @@ section {
 }
 
 /* posicionamento para a imagem à direita */
-.custom-img {
+.img-inicio {
     position: absolute;
     right: 0;
     top: 18rem;
@@ -59,21 +55,21 @@ section {
 
 
 /* aula 3 */
-.left-content {
+.esquerda-conteudo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
 }
 
-.img-right {
+/* .img-right {
     position: absolute;
     right: 0;
     top: 80%;
     transform: translateY(-50%);
-}
+} */
 
-.botao-home{
+.botao-inicio{
     /* poderíamos utilizar a classe do bootstrap btn-primary mas isso vai modificar outros botões */
     /* background-color: #FF862A; */
     background-color: var(--laranja-claro);
@@ -108,7 +104,7 @@ section {
     justify-content: center;
     /* text-align: center; */
     position: relative;
-    z-index: 1; /* Ensure content is above the background images */
+    z-index: 1; /* Garante que o conteúdo fica abaixo das imagens doo background */
 }
 
 /* #tropicalia .img-fluid {
@@ -130,12 +126,15 @@ h2 {
      
 }
 
-.galeria-background{
+.fundo-galeria{
     background: url('img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
     /* background-position: bottom right;
     background-repeat: no-repeat;    */
 }
+
+
+
 
 #contato {
     background-image: url('img/4965007.jpg');
@@ -158,7 +157,8 @@ h2 {
     font-weight: bold;
 }
 
-.form-control {
+/* chama classe do bootstrap para modificar a cor */
+.form-control { 
     background-color: #F1EDEF;
 }
 
@@ -168,86 +168,56 @@ h2 {
 
 /* Alto contraste */
 
-.high-contrast {
-    background-color: var(--high-contrast-bg);
-    color: var(--high-contrast-text);
+.alto-contraste  {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
 
-.high-contrast header,
-.high-contrast footer,
-.high-contrast .formulario {
-    background-color: var(--high-contrast-bg);
-    color: var(--high-contrast-text);
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
 }
-.high-contrast .nav-link {
-    color: var(--high-contrast-link);
-}
-
-.high-contrast .botao-home,
-.high-contrast .formulario button,
-.high-contrast .btn-primary {
-    background-color: var(--high-contrast-link);
-    color: var(--high-contrast-bg);
+.alto-contraste .nav-link {
+    color: var(--alto-contraste-link);
 }
 
-.high-contrast .home-background,
-.high-contrast #contato {
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary {
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+
+.alto-contraste .inicio-fundo,
+.alto-contraste #contato {
     background: none;
-    background-color: var(--high-contrast-bg);
+    background-color: var(--alto-contraste-fundo);
    
 }
 
-.high-contrast .custom-img,
-.high-contrast #tropicalia .container img,
-.high-contrast .galeria-background img {
-    filter: brightness(0.8); /* Ajuste a luminosidade das imagens */
+.alto-contraste .img-inicio,
+.alto-contraste #tropicalia .container img,
+.alto-contraste .fundo-galeria img {
+    filter: brightness(0.5); /* Ajuste a luminosidade das imagens */
 }
 
-.high-contrast #tropicalia {
-    
+.alto-contraste #tropicalia {
     background: none;
 }
 
-.high-contrast #galeria {
-    background-color: var(--high-contrast-bg);
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
 }
 
-.high-contrast .galeria-background {
+.alto-contraste .fundo-galeria {
     background: none;
 }
 
-/* .high-contrast a {
-    color: rgb(0, 0, 0);
-} */
 
-/* img {
-    max-width: 100%;
-    height: auto;
-} */
 
-/* footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-form{
-    color: #343a40;
-} */
-
-/* deixar comentado mesmo 
-.accessibility-menu {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-} */
-
-.accessibility-menu {
+.menu-acessibilidade {
     position: fixed;
     top: 2rem;
     right: 20px; /* Ajusta a distância da borda direita */
@@ -255,12 +225,12 @@ form{
     z-index: 1000;
 }
 
-.rotated-button {
+.rotacao-botao {
     transform: rotate(-90deg);
     transform-origin: right center;
 }
 
-.accessibility-options {
+.opcoes-acessibilidade {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -269,16 +239,16 @@ form{
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.accessibility-options.show {
+.opcoes-acessibilidade.mostra {
     opacity: 1;
     transform: translateY(0);
 }
 
-.accessibility-options button {
+.opcoes-acessibilidade button {
     margin-bottom: 5px;
 }
 
-.d-none {
+.apresenta-lista {
     display: none;
 }
 
